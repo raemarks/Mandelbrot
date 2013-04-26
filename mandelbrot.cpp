@@ -21,6 +21,7 @@ void MandelbrotImage::set_filename (void) {
 	cin >> filename;
 }
 
+
 void MandelbrotImage::write (void) {
 	ofstream out (filename.c_str(), ios_base::binary);
 	out << "P6" << endl << size_x << " " << size_y << endl << 255 << endl;
