@@ -50,7 +50,7 @@ void MandelbrotImage::write (void) {
 }
 
 int MandelbrotImage::mandelbrot (dcomplex c, dcomplex z, int max, int iterations) {
-		while ((iterations <= max) || (norm(z) <= 4)) {
+		while ((iterations <= max) && (norm(z) <= 4)) {
 			z = c + z*z;
 		}
 
